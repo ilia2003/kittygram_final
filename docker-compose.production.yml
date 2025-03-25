@@ -11,30 +11,33 @@ services:
     env_file: .env
     volumes:
       - pg_data:/var/lib/postgresql/data
-  
+
   backend:
-    build: ./backend/
+    image: baderilia/kittygram_backend
+    platform: linux/amd64
     env_file: .env
     depends_on:
       - db
     volumes:
       - static:/static
       - media:/app/media
-  
+
   frontend:
+    image: baderilia/kittygram_frontend
+    platform: linux/amd64
     env_file: .env
-    build: ./frontend/
     depends_on:
-      - backend
+      - backend  
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
-  
+
   gateway:
-    build: ./nginx/
+    image: baderilia/kittygram_gateway
+    platform: linux/amd64
     env_file: .env
     depends_on:
-      - frontend   
+      - frontend  
     ports:
       - 9000:80
     volumes:
