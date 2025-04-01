@@ -1,5 +1,6 @@
 Kittygram
 Main Kittygram Workflow
+(https://github.com/ilia2003/kittygram_final/blob/main/README.md/badge.svg)
 
 Kittygram - это платформа, позволяющая пользователям делиться фотографиями своих кошек.
 
