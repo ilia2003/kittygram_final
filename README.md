@@ -1,7 +1,7 @@
 Kittygram
 Main Kittygram Workflow
 
-![GitHub Workflow Status](https://github.com/OWNER/REPOSITORY/actions/workflows/WORKFLOW-FILE/badge.svg)
+![GitHub Workflow Status](https://github.com/ilia2003/kittygram_final/actions/workflows/main.yml/badge.svg)
 
 Kittygram - это платформа, позволяющая пользователям делиться фотографиями своих кошек.
 
